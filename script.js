@@ -12,5 +12,10 @@ function katt(){
 }
 
 function katt2(){
-    alert('most DOM-ot bővítek');
+    let g = document.querySelector('.grid-container');
+    let r = Math.round(1+Math.random()*10);
+    let div = document.createElement('div');
+    div.classList.toggle('grid-item');
+    div.innerHTML=r;
+    g.appendChild(div);
 }
